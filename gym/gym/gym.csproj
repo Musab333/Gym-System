@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6000E6A5-69CE-4476-9723-34BDDEC90F3A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>gym</RootNamespace>
+    <AssemblyName>gym</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="connection\DBHelpper.cs" />
+    <Compile Include="control\MemberManthRepsoritory.cs" />
+    <Compile Include="Gym_SystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gym_SystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="model\MemberManth.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="servises\Servises.cs" />
+    <Compile Include="views\frm_Add_Castmer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\frm_Add_Castmer.Designer.cs">
+      <DependentUpon>frm_Add_Castmer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\frm_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\frm_Home.Designer.cs">
+      <DependentUpon>frm_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\frm_Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\frm_Reports.Designer.cs">
+      <DependentUpon>frm_Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\frm_Users_Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\frm_Users_Manager.Designer.cs">
+      <DependentUpon>frm_Users_Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\frm_ViewAllCustamer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\frm_ViewAllCustamer.Designer.cs">
+      <DependentUpon>frm_ViewAllCustamer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\frm_Add_Castmer.resx">
+      <DependentUpon>frm_Add_Castmer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\frm_Home.resx">
+      <DependentUpon>frm_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\frm_Reports.resx">
+      <DependentUpon>frm_Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\frm_Users_Manager.resx">
+      <DependentUpon>frm_Users_Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\frm_ViewAllCustamer.resx">
+      <DependentUpon>frm_ViewAllCustamer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Gym_SystemDataSet.xsc">
+      <DependentUpon>Gym_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Gym_SystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gym_SystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gym_SystemDataSet.xss">
+      <DependentUpon>Gym_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\add-user-icon.jpg" />
+    <Content Include="images\add.png" />
+    <Content Include="images\add2.png" />
+    <Content Include="images\addgym.png" />
+    <Content Include="images\Admin.png" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\edit.png" />
+    <Content Include="images\expand.png" />
+    <Content Include="images\fitness-gym.png" />
+    <Content Include="images\icon.png" />
+    <Content Include="images\Lib.png" />
+    <Content Include="images\Logzain.png" />
+    <Content Include="images\password.png" />
+    <Content Include="images\Printer.png" />
+    <Content Include="images\report.png" />
+    <Content Include="images\reports.jpg" />
+    <Content Include="images\show.png" />
+    <Content Include="images\shutdown.png" />
+    <Content Include="images\statistics.png" />
+    <Content Include="images\updategym.png" />
+    <Content Include="images\user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,16 @@
+C:\Users\Musab\source\repos\gym\gym\bin\Debug\gym.exe
+C:\Users\Musab\source\repos\gym\gym\bin\Debug\gym.exe.config
+C:\Users\Musab\source\repos\gym\gym\obj\Debug\gym.csproj.AssemblyReference.cache
+C:\Users\Musab\source\repos\gym\gym\obj\Debug\gym.csproj.SuggestedBindingRedirects.cache
+C:\Users\Musab\source\repos\gym\gym\obj\Debug\gym.Properties.Resources.resources
+C:\Users\Musab\source\repos\gym\gym\obj\Debug\gym.views.frm_Add_Castmer.resources
+C:\Users\Musab\source\repos\gym\gym\obj\Debug\gym.views.frm_Home.resources
+C:\Users\Musab\source\repos\gym\gym\obj\Debug\gym.views.frm_Reports.resources
+C:\Users\Musab\source\repos\gym\gym\obj\Debug\gym.views.frm_Users_Manager.resources
+C:\Users\Musab\source\repos\gym\gym\obj\Debug\gym.views.frm_ViewAllCustamer.resources
+C:\Users\Musab\source\repos\gym\gym\obj\Debug\gym.frm_Login.resources
+C:\Users\Musab\source\repos\gym\gym\obj\Debug\gym.csproj.GenerateResource.cache
+C:\Users\Musab\source\repos\gym\gym\obj\Debug\gym.csproj.CoreCompileInputs.cache
+C:\Users\Musab\source\repos\gym\gym\obj\Debug\gym.exe
+C:\Users\Musab\source\repos\gym\gym\obj\Debug\gym.pdb
+C:\Users\Musab\source\repos\gym\gym\bin\Debug\gym.pdb
